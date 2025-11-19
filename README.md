@@ -29,7 +29,11 @@ cancer_history
 
 diagnosis (Target)
 
+
+
 The dataset is cleaned, encoded, scaled, and used to train a KNN Classification Model, which is later integrated with a simple Streamlit UI for user interaction.
+
+
 
 Features
 
@@ -54,13 +58,14 @@ Streamlit GUI for predictions
 Simple & production-ready code
 
 
-How the Model Works
 
+
+How the Model Works
 
 Data Preprocessing
 
-
 Missing value handling
+
 
 Label encoding for:
 
@@ -98,14 +103,17 @@ Visual EDA plots (distribution, correlation heatmap)
 Running the Project Locally
 
 
+
 Step 1: Install dependencies
 
 pip install -r requirements.txt
 
 
+
 Step 2: Train the model (optional)
 
 python train_cancer_knn.py
+
 
 
 This generates:
@@ -115,9 +123,12 @@ cancer_knn.pkl
 scaler.pkl
 
 
+
 Step 3: Run the Streamlit App
 
 streamlit run app.py
+
+
 
 Deploying on Streamlit Cloud
 
@@ -132,6 +143,7 @@ Select your repo
 Choose CancerPredictionStreamlit.py as the main app file
 
 Deploy 
+
 
 
 Technologies Used
