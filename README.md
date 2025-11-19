@@ -1,119 +1,75 @@
-# Cancer-Prediction
+# **Cancer Prediction using KNN**
 
-Cancer Diagnosis Prediction using KNN
+A complete end-to-end **Machine Learning project** that uses the **K-Nearest Neighbors (KNN)** algorithm to predict whether a person is likely to have **cancer** based on lifestyle, health, and genetic-risk factors.  
+This project includes dataset preprocessing, EDA, model training, evaluation, model saving, and a Streamlit web app for real-time cancer risk prediction.
 
-A complete end-to-end Machine Learning project that uses the K-Nearest Neighbors (KNN) algorithm to predict whether a person is likely to have cancer based on lifestyle, health, and genetic-risk features.
-This project includes EDA, preprocessing, model training, evaluation, model saving, and a Streamlit web application for real-time prediction.
+---
 
+## **Project Overview**
 
-Project Overview
+This project classifies **cancer diagnosis (Yes/No)** using the following features:
 
+- age  
+- gender  
+- bmi  
+- smoking  
+- genetic_risk  
+- physical_activity  
+- alcohol_intake  
+- cancer_history  
+- diagnosis *(Target)*
 
-This project aims to classify cancer diagnosis (Yes/No) using the following features:
+The dataset undergoes cleaning, label encoding, scaling, and is used to train a **KNN Classification Model**, which is then integrated into a simple **Streamlit UI**.
 
-age
+---
 
-gender
+## ** Features**
 
-bmi
+- Load & clean dataset  
+- Exploratory Data Analysis (visualizations included)  
+- Label encoding of categorical columns  
+- Feature scaling using `StandardScaler`  
+- Train-test split  
+- KNN Training  
+- Model Evaluation (Accuracy, Confusion Matrix, Classification Report)  
+- Save trained model as `.pkl`  
+- Streamlit GUI for predictions  
+- Lightweight & production-ready code  
 
-smoking
+---
 
-genetic_risk
+## **How the Model Works**
 
-physical_activity
+### **1️⃣ Data Preprocessing**
+- Handle missing values  
+- Label encoding for:  
+  - gender  
+  - smoking  
+  - cancer_history  
+  - diagnosis  
+- Standardization using **StandardScaler**
 
-alcohol_intake
+### **2️⃣ Model Training**
+- Algorithm:  
+- Train-test split: **80% training, 20% testing**
 
-cancer_history
+### **3️⃣ Model Evaluation**
+- Accuracy score  
+- Classification report  
+- Confusion matrix  
+- EDA visualizations (distribution plots, heatmap)
 
-diagnosis (Target)
+---
 
+## **▶️ Running the Project Locally**
 
-
-The dataset is cleaned, encoded, scaled, and used to train a KNN Classification Model, which is later integrated with a simple Streamlit UI for user interaction.
-
-
-
-Features
-
-Load & clean dataset
-
-Exploratory Data Analysis (visualizations included)
-
-Label encoding of categorical columns
-
-Feature scaling using StandardScaler
-
-Train-test split
-
-KNN Training
-
-Model Evaluation (Accuracy, Confusion Matrix, Class Report)
-
-Save trained model as .pkl
-
-Streamlit GUI for predictions
-
-Simple & production-ready code
-
-
-
-
-How the Model Works
-
-Data Preprocessing
-
-Missing value handling
-
-
-Label encoding for:
-
-gender
-
-smoking
-
-cancer_history
-
-diagnosis
-
-Standardization using StandardScaler
-
-
-Model Training
-
-The model uses:
-
-KNeighborsClassifier(n_neighbors=5)
-
-
-Trained using 80% of the dataset.
-
-
-Model Evaluation
-
-Accuracy score
-
-Classification report
-
-Confusion matrix
-
-Visual EDA plots (distribution, correlation heatmap)
-
-Running the Project Locally
-
-
-
-Step 1: Install dependencies
+### **Step 1: Install Dependencies**
 
 pip install -r requirements.txt
 
-
-
-Step 2: Train the model (optional)
+### **Step 2: Train the Model (Optional)**
 
 python train_cancer_knn.py
-
 
 
 This generates:
@@ -122,44 +78,38 @@ cancer_knn.pkl
 
 scaler.pkl
 
-
-
-Step 3: Run the Streamlit App
+### **Step 3: Run the Streamlit App**
 
 streamlit run app.py
 
+### **Deploying on Streamlit Cloud**
 
+-Push all project files to GitHub
 
-Deploying on Streamlit Cloud
+-Visit: https://share.streamlit.io
 
-Push all files to a GitHub repository
+-Click New App
 
-Go to https://share.streamlit.io
+-Select your GitHub repo
 
-Click New App
+-Choose CancerPredictionStreamlit.py as the main app file
 
-Select your repo
+-Deploy
 
-Choose CancerPredictionStreamlit.py as the main app file
+### **Technologies Used**
 
-Deploy 
+-Python
 
+-Pandas
 
+-NumPy
 
-Technologies Used
+-Matplotlib
 
-Python
+-Seaborn
 
-Pandas
+-Scikit-Learn
 
-NumPy
+-Streamlit
 
-Matplotlib
-
-Seaborn
-
-Scikit-Learn
-
-Streamlit
-
-Joblib
+-Joblib
