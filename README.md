@@ -23,7 +23,7 @@ The dataset undergoes cleaning, label encoding, scaling, and is used to train a 
 
 ---
 
-## ** Features**
+## **Features**
 
 - Load & clean dataset  
 - Exploratory Data Analysis (visualizations included)  
