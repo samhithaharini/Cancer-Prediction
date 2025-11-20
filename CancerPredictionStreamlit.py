@@ -14,7 +14,7 @@ gender = st.selectbox("Gender", ["Male", "Female"])
 bmi = st.number_input("BMI", 10.0, 60.0)
 smoking = st.selectbox("Smoking", ["Yes", "No"])
 genetic_risk = st.number_input("Genetic Risk (1–10)", 1, 10)
-physical_activity = st.number_input("Physical Activity (1–5)", 1, 5)
+physical_activity = st.number_input("Fitness Level (1–5)", 1, 5)
 alcohol_intake = st.number_input("Alcohol Intake (1–5)", 1, 5)
 cancer_history = st.selectbox("Family Cancer History", ["Yes", "No"])
 
@@ -32,3 +32,4 @@ if st.button("Predict"):
     diagnosis = "Cancer Detected" if pred == 1 else "No Cancer"
 
     st.success(f"Prediction: **{diagnosis}**")
+
