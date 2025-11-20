@@ -96,6 +96,8 @@ streamlit run app.py
 
 -Deploy
 
+---
+
 ### **Technologies Used**
 
 -Python
